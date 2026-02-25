@@ -34,12 +34,12 @@ col1, col2 = st.columns(2)
 with col1:
     current_year = st.selectbox("Mevcut liste fiyatı yılı", [2025, 2026], index=0)
     current_disc_pct = st.number_input(
-        "Mevcut iskonto (%)", min_value=0.0, max_value=100.0, value=45.0, step=0.1
+        "Mevcut iskonto (%)", min_value=0.0, max_value=100.0, value=45.0, step=0.5
     )
 with col2:
     target_year = st.selectbox("Talep edilen liste fiyatı yılı", [2025, 2026], index=1)
     target_disc_pct = st.number_input(
-        "Talep edilen iskonto (%)", min_value=0.0, max_value=100.0, value=45.0, step=0.1
+        "Talep edilen iskonto (%)", min_value=0.0, max_value=100.0, value=45.0, step=0.5
     )
 
 d_current = current_disc_pct / 100.0
