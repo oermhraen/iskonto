@@ -1,6 +1,10 @@
 import streamlit as st
 
-st.set_page_config(page_title="Ek İskonto Hesaplayıcı", layout="centered")
+st.set_page_config(
+    page_title="Ek İskonto Hesaplayıcı",
+    page_icon="💸",
+    layout="wide"
+)
 
 st.title("Ek İskonto Hesaplayıcı (2025 GFL ↔ 2026 GFL)")
 st.caption("Varsayım: 2026 liste fiyatı = 2025 liste fiyatı × 1.08")
